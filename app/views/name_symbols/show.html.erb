@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @name_symbol %>
+
+<div>
+  <%= link_to "Edit this name symbol", edit_name_symbol_path(@name_symbol) %> |
+  <%= link_to "Back to name symbols", name_symbols_path %>
+
+  <%= button_to "Destroy this name symbol", @name_symbol, method: :delete %>
+</div>

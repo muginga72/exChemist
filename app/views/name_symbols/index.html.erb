@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Name symbols</h1>
+
+<div id="name_symbols">
+  <% @name_symbols.each do |name_symbol| %>
+    <%= render name_symbol %>
+    <p>
+      <%= link_to "Show this name symbol", name_symbol %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New name symbol", new_name_symbol_path %>
